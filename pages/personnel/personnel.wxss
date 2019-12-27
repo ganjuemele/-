@@ -1,0 +1,30 @@
+text {
+  font-size: 36rpx;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 30rpx;
+  /* border: 1px solid black; */
+  border-radius: 8%;
+  align-items: center;
+  display: flex;
+}
+
+.userinfo-nickname {
+  align-items: center;
+  font-size: 36rpx;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

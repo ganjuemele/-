@@ -1,0 +1,40 @@
+<view class='search-header'>
+  <view class='search'>
+    <icon type="search" class='search-img' size='13' color='#405F80' />
+    <input type='text' placeholder='输入样管外径' placeholder-class='placeholder' bindfocus='onBindFocus' bindconfirm="onBindChange" />
+    <image wx:if="{{searchPanelShow}}" src='../../img/tab/xx.png' class="xx-img" bindtap="onCancelImgTap" />
+  </view>
+
+  <radio-group name="radio-group" bindchange="onRadioChange">
+      <label><radio value="UT"/>UT</label>
+      <label><radio value="ET"/>ET</label>
+    </radio-group>
+</view>
+
+<view class='tr'>
+    <text class="th size">样管规格</text>
+    <text class="th info">样管信息</text>
+    <text class="th remark">备注</text>
+</view>
+<view class='' wx:if='{{isSearch == false}}'>
+  <block wx:for="{{sampleTubeListData}}" wx:key="">
+    <view class='tr' data-infor='{{item.info}}' data-size='{{item.size}}' data-remark='{{item.remark}}'>
+    
+      <view class='th size'>{{item.size}}</view>
+      <view class='th info'>{{item.info}}</view>
+      <view class='th remark'>{{item.remark}}</view>
+
+    </view>
+  </block>
+</view>
+<view class='' wx:if='{{isSearch == true}}'>
+  <block wx:for="{{searchList}}" wx:key="">
+    <view class='tr' data-infor='{{item.info}}' data-size='{{item.size}}' data-remark='{{item.remark}}'>
+    
+      <view class='th size'>{{item.size}}</view>
+      <view class='th info'>{{item.info}}</view>
+      <view class='th remark'>{{item.remark}}</view>
+
+    </view>
+  </block>
+</view>

@@ -1,0 +1,45 @@
+<view>
+  <swiper class='head-img' indicator-dots="ture" autoplay="ture" circular="ture">
+    <block>
+      <swiper-item>
+        <view>
+          <image class='img-fighting' src='../img/baosteel.jpg' alt="宝钢全景" />
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view>
+          <image class='img-fighting' src='../img/baosteel12.jpg' alt="宝钢码头" />
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view>
+          <image class='img-fighting' src='../img/fighting.png' alt="撸起袖子加油干" />
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='index'>
+  <view class='index-entrance' bindtap='yangguan'>
+    <image class='index-entrance-icon' src='../img/icon/yang.png' />
+    <text>样管信息</text>
+  </view>
+  <view class='index-entrance' bindtap='tongji'>
+    <image class='index-entrance-icon' src='../img/icon/biao.png' />
+    <text>报表统计</text>
+  </view>
+</view>
+<view class='index'>
+  <view class='index-entrance' bindtap='rili'>
+    <image class='index-entrance-icon' src='../img/icon/ban.png' />
+    <text>翻班日历</text>
+  </view>
+  <view class='index-entrance' bindtap='tuici'>
+    <image class='index-entrance-icon' src='../img/icon/ci.png' />
+    <text>退磁参数</text>
+  </view>
+  <!-- <view class='index-entrance' bindtap='qita'>
+    <image class='index-entrance-icon' src='../img/icon/biao.png' />
+    <text>其他信息</text>
+  </view> -->
+</view>

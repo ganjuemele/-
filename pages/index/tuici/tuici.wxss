@@ -1,0 +1,68 @@
+.tr {
+  display: flex;
+  width: 120%;
+  justify-content: center;
+  align-items: center;
+  height: 3.4rem;
+  border-bottom: 1rpx #3366FF solid;
+}
+.th {
+  width: 24%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 15px;
+}
+.th2 {
+  width: 24%;
+  justify-content: center;
+  align-items: center;
+  /* display: flex; */
+  font-size: 14px;
+  padding: 2px;
+}
+.th100 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.th100 text {
+  width: 49.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
+.txt {
+  width: 12.4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-w {
+  background: rgb(85, 114, 255);
+  color: #fff;
+}
+.bd-l {
+  border-left: 1rpx #fff solid;
+}
+.bd-b {
+  border-bottom: 1rpx #fff solid;
+}
+.tr2 {
+  display: flex;
+  width: 120%;
+  justify-content: center;
+  align-items: center;
+  height: 2.4rem;
+  border-bottom: 1rpx #3366FF solid;
+}
+.bd {
+  height: 2.4rem;
+  border-left: 1rpx #3366FF solid;
+}
+.remark {
+  width: 20%;
+}

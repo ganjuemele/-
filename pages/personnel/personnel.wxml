@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="userinfo">
+    <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      登录 
+    </button> -->
+    <button class='getUser' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      授权登录
+    </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover" />
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text>探伤检验作业区</text>
+
+    </block>
+  </view>
+  <!-- <button class='getUser' wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button> -->
+
+  <!-- <view class="userinfo">
+    <button formType="submit" bindtap="loginBtnClick"> 登录 </button>
+  </view> -->
+
+</view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
