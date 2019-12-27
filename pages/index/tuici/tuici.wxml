@@ -1,0 +1,30 @@
+<view>
+  <view class="tr bg-w">
+    <text class="th remark">钢种</text>
+    <text class="th bd-l">规格</text>
+    <view class="th2 bd-l">
+      <text class='th100 bd-b'>直流</text>
+      <view class='th100'>
+        <text>V</text>
+        <text class='bd-l'>A</text>
+      </view>
+    </view>
+    <view class="th2 bd-l">
+      <text class='th100 bd-b'>实测</text>
+      <view class='th100'>
+        <text>头</text>
+        <text class='bd-l'>尾</text>
+      </view>
+    </view>
+  </view>
+  <block wx:for="{{tuiciList1}}" wx:key="">
+    <view class="tr2">
+      <view class="th remark">{{item.remark}}</view>
+      <view class="th bd">{{item.size}}</view>
+      <view class='txt bd'>{{item.zhiliu_A}}</view>
+      <view class='txt bd'>{{item.zhiliu_V}}</view>
+      <view class='txt bd'>{{item.head}}</view>
+      <view class='txt bd'>{{item.tail}}</view>
+    </view>
+  </block>
+</view>

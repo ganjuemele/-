@@ -1,0 +1,84 @@
+<view class="table">
+  <view class='view-head'>
+    <view class='date-chance'>
+      <picker mode="date" value="{{date}}" start="2018-09-01" end="2099-09-01" bindchange="bindDateChange">
+        <view class="picker">
+            <image class='calendar' src='../img/tab/calendar.png'/>
+        </view>
+      </picker>
+    </view>
+    <view class='section-chance'>
+      <view>
+          <text class="day">{{riqi}}</text>
+      </view>
+    </view>
+    <view class='add'>
+      <image bindtap="addRecord" class="add" src='../img/tab/xinjian.png' />
+    </view>
+  </view>
+  <view class="tr bg-w"> 
+    <text class="th th3">钢种\n规格</text>
+    <!-- <text class="th">台车</text> -->
+    <text class="th">吊数</text>
+    <text class="th">支数</text>
+    <text class="th th2">公尺数</text>
+    <text class="th">重量</text>
+  </view>
+
+  <block wx:for="{{listData}}" wx:key="{{code}}">
+    <!-- <view class='hidden' wx:if='{{index % 2 == 0}}'> -->
+    <view class="bgc-0" wx:if="{{item.isRepeat == 'pipe0'}}">
+      <view class="tr li" wx:if="{{isDateEqual !== true}}" bindtap="delRecord">
+        <view class="td th th3">
+          <text>{{item.material}}\n{{item.specify}}</text>
+        </view>
+        <!-- <view class="td th" >{{item.pipeline}}</view> -->
+        <view class="th">{{item.diao_number}}</view>
+        <view class="th">{{item.zhi_number}}</view>
+        <view class="th th2">
+          <view>{{item.meter_number}}</view>
+          <!-- <view class="delHidden" wx:if='{{del !== false}}' ></view>
+          <view class='delShow' wx:if='{{del == true}}'>
+            <view class='reviseButton'>修改</view>
+            <view class='delButton'>删除</view>
+          </view> -->
+        </view>
+        <view class="td th" >{{item.cube_weight}}</view>
+
+      </view>
+    </view>
+    <view class="bgc-1" wx:if="{{item.isRepeat == 'pipe1'}}">
+      <view class="tr li" wx:if="{{isDateEqual !== true}}" bindtap="delRecord">
+        <view class="td th th3">
+          <text>{{item.material}}\n{{item.specify}}</text>
+        </view>
+        <view class="th">{{item.diao_number}}</view>
+        <view class="th">{{item.zhi_number}}</view>
+        <view class="th th2">
+          <view>{{item.meter_number}}</view>
+        </view>
+        <view class="td th" >{{item.cube_weight}}</view>
+      </view>
+    </view>
+    <view class="bgc-2" wx:if="{{item.isRepeat == 'pipe2'}}">
+      <view class="tr li" wx:if="{{isDateEqual !== true}}" bindtap="delRecord">
+        <view class="td th th3">
+          <text>{{item.material}}\n{{item.specify}}</text>
+        </view>
+        <view class="th">{{item.diao_number}}</view>
+        <view class="th">{{item.zhi_number}}</view>
+        <view class="th th2">
+          <view>{{item.meter_number}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+  
+  <view class="tr b bg-g"> 
+    <text class="th th3">合计</text>
+    <text class="th">{{allType1}}</text>
+    <text class="th">{{allType2}}</text>
+    <text class="th th2">{{all_meter_number}}</text>
+    <text class="th">{{all_cube_weight}}</text>
+  </view>
+</view>

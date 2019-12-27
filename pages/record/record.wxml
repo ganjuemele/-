@@ -1,0 +1,92 @@
+<form class="page-body" bindsubmit="formSubmit">
+
+  <view class="page-section">
+      <input name="list_id" type="number">{{list_id}}</input>
+    </view>
+  <view class="section-section">
+    <view class="weui-cells__title">日期</view>
+    <picker class="weui-cells weui-cells_after-title" name="date" mode="date" value="{{date}}" start="2018-06-01" end="2020-12-31" bindchange="bindDateChange">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-input">{{date}}</view>
+      </view>
+    </picker>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">合同号</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input name="contract_no" class="weui-input" type="digit number" placeholder="输入合同号" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">工作台车</view>
+    <picker name="pipeline" class="weui-cells weui-cells_after-title" bindchange="bindPickerChange" value="{{array[index]}}" range="{{array}}">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-input">{{array[index]}}</view>
+      </view>
+    </picker>
+</view>
+  <view class="page-section">
+    <view class="weui-cells__title">钢管材质</view>
+      <picker name="material" class="weui-cells weui-cells_after-title" bindchange="bindMaterialPickerChange" value="{{material[materialIndex]}}" range="{{material}}">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-input">{{material[materialIndex]}}</view>
+      </view>
+      </picker>
+    </view>
+    <view>
+      <view class="page-section-3">
+        <view class="weui-cells__title">直径(mm)</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input name="diameter" class="weui-input" type="digit" placeholder="输入直径" />
+          </view>
+        </view>
+      </view>
+      <view class='multiply'>✖️</view>
+      <view class="page-section-3">
+        <view class="weui-cells__title">壁厚(mm)</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input name="thickness" class="weui-input" type="digit" placeholder="输入壁厚" />
+          </view>
+        </view>
+      </view>
+      <view class='multiply'>✖️</view>
+
+      <view class="page-section-3">
+        <view class="weui-cells__title">长度(m)</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input name="length" class="weui-input" type="digit" placeholder="输入长度" />
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="page-section">
+      <view class="weui-cells__title">吊数</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input name="diao_number" class="weui-input" type="number" placeholder="输入吊数" />
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">支数</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input name="zhi_number" class="weui-input" type="number" placeholder="输入支数" />
+        </view>
+      </view>
+    </view>
+    <view class="page-section page-radio">
+      <radio-group name="radio_group">
+        <label><radio value="pipe0"/>初探管</label>
+        <label><radio value="pipe1"/>复探管</label>
+        <label><radio value="pipe2"/>抛光管</label>
+      </radio-group>
+    </view>
+    <button formType="submit" type="primary">提交</button>
+</form>

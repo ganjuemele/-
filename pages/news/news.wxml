@@ -1,0 +1,19 @@
+<!-- <import src="./post-item/post-item-template.wxml"/> -->
+
+<view>
+  <block wx:for="{{news_key}}" wx:key="123" wx:for-item="item" wx:for-index="index">
+
+    <view catchtap="onNewsTap" data-newsId="{{item.newsId}}">
+      <!-- <view class='adk' data="{{...item}}"> -->
+      <text class='news-title'>{{item.title}}</text>
+      <view class='news-author-date'>
+        <text class="news.author">{{item.author}}</text>
+        <text class='news-date'>{{item.date}}</text>
+      </view>
+      <image class='news-image' src='{{item.image}}'/>
+
+      <!-- </view> -->
+    </view>
+  </block>
+
+</view>

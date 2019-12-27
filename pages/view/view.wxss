@@ -1,0 +1,83 @@
+@import "./date/date-template.wxss";
+/* .table {
+  border: 0rpx solid darkgray;
+} */
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 2.4rem;
+  align-items: center;
+  border-bottom: 1rpx #5d95af solid;
+}
+.li:hover {
+  background: #e6f3f9; 
+}
+.td {
+  width: 40%;
+  text-align: center; 
+}
+.th {
+  width: 15%; 
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+   /* border-right: 1rpx solid black;    */
+}
+.bg-w{
+   background: #3366FF;
+   color: #fff;
+}
+.th2 {
+  width: 25%;
+}
+.th3 {
+  width: 30%;
+}
+.bg-g{
+  background: #a6c1fc;
+}
+.b {
+  font-weight: bold;
+  font-size: 30px;
+}
+.hidden {
+  background: #e6f3f9; 
+    /* display: none; */
+} 
+
+.delShow {
+  font-size: 32rpx;
+  text-align: center; 
+  justify-content: center;
+  width: 100%;
+}
+.reviseButton {
+  display: inline-flex;
+  width: 50%;
+  background: #b4b4b4;
+  height: 2.4rem;
+  align-items: center;
+  justify-content: center;
+}
+.delButton {
+  display: inline-flex;
+  width: 50%;
+  background: #fd5d5d;
+  height: 2.4rem;
+  align-items: center;
+  justify-content: center;
+}
+.delHidden {
+  display: none;
+}
+.bgc-0 {
+  background:  #ffffff;
+}
+.bgc-1 {
+  background:  #e6e6e6;
+}
+.bgc-2 {
+    background:  #fd9d5d;
+}

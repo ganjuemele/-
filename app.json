@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/news/news",
+    "pages/index/index",
+    "pages/index/fanban/fanban",
+    "pages/view/view",
+    "pages/news/post-detail/post-tetail",
+    "pages/news/post-item/post-item-template",
+    "pages/index/sample-tube/sample-tube",
+    "pages/index/jianyan/jianyan",
+    "pages/personnel/personnel",
+    "pages/record/record",
+    "pages/index/tuici/tuici"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "质检工作记录",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "color": "#a1a1a1",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/img/tab/no-zhuye.png",
+        "selectedIconPath": "pages/img/tab/zhuye.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "iconPath": "pages/img/tab/no-record.png",
+        "selectedIconPath": "pages/img/tab/record.png",
+        "text": "资讯"
+      },
+      {
+        "pagePath": "pages/personnel/personnel",
+        "iconPath": "pages/img/tab/no-mine.png",
+        "selectedIconPath": "pages/img/tab/mine.png",
+        "text": "员工"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
